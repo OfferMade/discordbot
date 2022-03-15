@@ -13,8 +13,8 @@ saat = time.asctime()
 
 @client.event
 async def on_member_join(member):
-  guild = client.get_guild(882370106091520080)
-  channel = client.get_channel(883061202480169061)
+  guild = client.get_guild(FILL HERE)
+  channel = client.get_channel(FILL HERE)
   await channel.send(f'{member.mention} sınıfa katıldı! Lütfen kullanıcı adını gerçek ismin yap!')
   print('I am ready to engage')
 
@@ -25,7 +25,7 @@ async def on_ready():
 
 @client.event
 async def on_ready():
-  await client.change_presence(activity= discord.Game(name='Visual Studio Code'))
+  await client.change_presence(activity= discord.Game(name='Visual Studio Code')) 
 
 @client.event
 async def on_message(message):
